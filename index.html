@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristine Joy B. Diaz — Portfolio</title>
+    <meta name="description" content="Creative Mind • Future Developer • Dreamer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bubble-scene" id="bubble-scene" aria-hidden="true"></div>
+
+    <!-- Decorative floating elements -->
+    <div class="floating-element" id="float1"></div>
+    <div class="floating-element" id="float2"></div>
+    <div class="floating-element" id="float3"></div>
+    <div class="floating-element" id="float4"></div>
+    <div class="sparkle" id="sparkle1"></div>
+    <div class="sparkle" id="sparkle2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="Kristine Joy Diaz home">
+                <span class="logo-badge">
+                    <span class="logo-text">KD</span>
+                </span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content centered-hero">
+            <div class="profile-photo-wrap" aria-label="Profile photo">
+                <img src="kristines.jpg" alt="Kristine Joy B. Diaz" class="profile-photo">
+            </div>
+            <h1 class="hero-name">Kristine Joy B. Diaz</h1>
+            <p class="hero-subtitle">
+                <span id="typewriter"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-intro">Hi! I'm Kristine Joy B. Diaz, a passionate and creative individual who loves technology, design, and turning ideas into meaningful digital experiences.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#about" class="btn btn-secondary">About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <h2 class="section-title">A Little About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-container">
+            <div class="about-text" id="about-text">
+                <p>Hello! I'm Kristine Joy B. Diaz, a creative and ambitious individual based in the Philippines. I have a deep love for technology and design, and I'm constantly exploring ways to blend creativity with functionality. My journey in tech is driven by curiosity and a passion for creating meaningful digital experiences that resonate with users.</p>
+                <p>When I'm not coding or designing, you can find me sketching, listening to music, or planning my next creative project. I believe that great design should be both beautiful and purposeful, and I'm excited to continue growing as a developer and creator.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-content">
+                    <div class="info-item">
+                        <span class="info-icon">🌸</span>
+                        <span class="info-label">Name:</span>
+                        <span class="info-value">Kristine Joy B. Diaz</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🎓</span>
+                        <span class="info-label">Role:</span>
+                        <span class="info-value">Student / Aspiring Developer</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <span class="info-label">Location:</span>
+                        <span class="info-value">Philippines</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💖</span>
+                        <span class="info-label">Interests:</span>
+                        <span class="info-value">Online Selling, Watching K-dramas, Web Development, Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hobbies" id="hobbies">
+        <div class="section-header">
+            <h2 class="section-title">My Hobbies</h2>
+            <p class="section-subtitle">Things I enjoy in my free time</p>
+        </div>
+        <div class="hobby-list">
+            <div class="hobby-item">
+                <span class="hobby-icon">🛍️</span>
+                <span>Online Selling</span>
+            </div>
+            <div class="hobby-item">
+                <span class="hobby-icon">📺</span>
+                <span>Watching K-dramas</span>
+            </div>
+            <div class="hobby-item">
+                <span class="hobby-icon">🎨</span>
+                <span>Designing</span>
+            </div>
+            <div class="hobby-item">
+                <span class="hobby-icon">🎵</span>
+                <span>Listening to Music</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">What I'm passionate about</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3 class="skill-name">HTML</h3>
+                <p class="skill-description">Building the structural foundation of beautiful web experiences.</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="--progress: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3 class="skill-name">CSS</h3>
+                <p class="skill-description">Crafting elegant designs with smooth animations and modern styling.</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="--progress: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-description">Bringing interactivity and dynamic functionality to life.</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="--progress: 70%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">✏️</div>
+                <h3 class="skill-name">UI/UX Design</h3>
+                <p class="skill-description">Designing intuitive and delightful user experiences.</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="--progress: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3 class="skill-name">Responsive Web Design</h3>
+                <p class="skill-description">Creating seamless experiences across all devices.</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="--progress: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🌟</div>
+                <h3 class="skill-name">Creative Design</h3>
+                <p class="skill-description">Turning ideas into visually stunning digital art.</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="--progress: 90%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <h2 class="section-title">My Creative Works</h2>
+            <p class="section-subtitle">A curated collection of my favorite projects</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://placehold.co/400x250/fff0f6/ffb6c1?text=Portfolio" alt="Personal Portfolio">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Personal Portfolio</h3>
+                    <p class="project-description">A modern, feminine personal portfolio website showcasing my skills, projects, and creative journey.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://placehold.co/400x250/fff0f6/ffb6c1?text=E-Commerce" alt="E-Commerce Website">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Website</h3>
+                    <p class="project-description">A styled e-commerce platform with a feminine aesthetic, product galleries, and smooth cart interactions.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Responsive</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://placehold.co/400x250/fff0f6/ffb6c1?text=Creative+Design" alt="Creative Web Design">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Creative Web Design</h3>
+                    <p class="project-description">A collection of experimental web design concepts blending pastel aesthetics with modern interactions.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">UI/UX</span>
+                        <span class="project-tag">Animation</span>
+                        <span class="project-tag">Design</span>
+                    </div>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Let's Create Something Beautiful</h2>
+            <p class="section-subtitle">I'd love to hear from you — drop me a message!</p>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <h3>Find Me On</h3>
+                <div class="social-grid">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <span class="social-icon">📘</span>
+                        <span class="social-name">Facebook</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <span class="social-icon">📷</span>
+                        <span class="social-name">Instagram</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <span class="social-icon">🐙</span>
+                        <span class="social-name">GitHub</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <span class="social-icon">💼</span>
+                        <span class="social-name">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Notification -->
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <span class="notification-icon">✨</span>
+            <p>Message sent successfully! I'll get back to you soon.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with <span class="heart">♥</span> by Kristine Joy B. Diaz</p>
+        <p class="copyright" id="copyright-year"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
